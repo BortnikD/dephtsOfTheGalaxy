@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 5px;
+    padding: 10px;
+    height: auto;
+    border-radius: 25px;
+    transition: background-color 0.5s ease;
+    font-size: 18px;
+}
+
+.nav-item.active {
+    background-color: rgb(49, 49, 49);
+}
+
+.nav-item:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.nav-link {
+    color: rgb(236, 204, 204);
+    text-decoration: none;
+}
+
+.site-name {
+    color: rgb(236, 204, 204);
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.interesting-now-block {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between; /* Размещает элементы на максимальном расстоянии */
+    align-items: center; /* Центрирует кнопки вертикально */
+    position: relative;
+}
+
+.interesting-now-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.interesting-now-list-item {
+    background-image: url('../images/cosmo_science/theBlackHole.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 80vh;   
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 30px; 
+    overflow: hidden;
+}
+
+.interesting-now-background-content {
+    max-width: 30%;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(59, 59, 59, 0.795);
+    margin-bottom: 100px;
+    margin-left: 50px;
+
+}
+
+.interesting-now-list-item-content {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 20px;
+    line-height: 1.1; 
+}
+
+#btn-prev {
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    position: absolute;
+    left: 10px; /* Отступ от левого края */
+    top: 50%; /* Вертикальное выравнивание по центру */
+    transform: translateY(-50%) scaleX(-1); /* Сдвиг для точного центрирования */
+    transition: width 0.35s ease, height 0.35s ease, opacity 0.5s ease;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+}
+
+#btn-next {
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    position: absolute;
+    right: 10px; /* Отступ от правого края */
+    top: 50%; /* Вертикальное выравнивание по центру */
+    transform: translateY(-50%); /* Сдвиг для точного центрирования */
+    transition: width 0.35s ease, height 0.35s ease, opacity 0.5s ease;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+}
+
+#btn-prev:hover, #btn-next:hover {
+    width: 70px;
+    height: 70px;
+    opacity: 100%;
+}
+
+@media (max-width: 1200px) {
+    .nav-items {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+
+    .interesting-now-list-item {
+        max-width: 100%;
+    }
+
+    .interesting-now-background-content {
+        max-width: 80%;
+    }
+}
