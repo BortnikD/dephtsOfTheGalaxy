@@ -1,34 +1,132 @@
-.science-main {
-    color: white;
+body {
+    color: rgb(233, 233, 233);
+}
+
+.science-slider {
     text-decoration: none;
-    
 }
 
 .science-list {
+    padding: 0px;
     list-style: none;
+    display: flex;
+
+    flex-wrap: wrap;   
+
+    justify-content: center;
+    align-items: center;
 }
 
 .science-list-item {
     background-color: rgb(51, 54, 56);
-    width: 15%;
+    width: 20%;
     height: 25vh;
+
     padding: 10px;
+    margin: 15px;
 
-    border-radius: 30px;
-    border: 3px solid rgb(161, 161, 161);
-    box-shadow: 5px 4px rgba(12, 12, 12, 0.514);
+    color: rgb(240, 240, 240);
 
-    text-align: center;
-    transition: all 0.5s;
+    border-radius: 15px;
+    border: 3px solid rgb(92, 92, 92);
 
+    box-shadow: 5px 4px 5px rgba(12, 12, 12, 0.514);
+
+    text-align: center; 
+
+    align-self: flex-end;
+
+    transition: all 0.8s;
     transform-origin: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+    opacity: 0.92;
 }
 
-.science-list-item:hover {
+.active-science {
     background-color: rgb(64, 66, 68);
     
     transform: scale(1.05); /* Здесь элемент увеличится на 10% */
 
     border: 3px solid rgb(233, 232, 232);
     box-shadow: 5px 4px rgba(90, 90, 90, 0.514);
+
+    opacity: 1;
+}
+
+.science-list-item:hover {
+    background-color: rgb(64, 66, 68);
+    
+    transition: all 0.3s;
+    transform: scale(1.05); /* Здесь элемент увеличится на 10% */
+
+    border: 3px solid rgb(233, 232, 232);
+    box-shadow: 5px 4px rgba(90, 90, 90, 0.514);
+
+    opacity: 1;
+}
+
+.science-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    width: auto;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 22px;
+    text-shadow: 1px 1px 5px black;
+}
+
+#astronomy {
+    background-image: url('../images/cosmo_science/scienceList/Astronomy.png');
+}
+
+#black-hole {
+    background-image: url('../images/cosmo_science/scienceList/blackHole.png');
+}
+
+#cosmo-technologies {
+    background-image: url('../images/cosmo_science/scienceList/technologies.png');
+}
+
+#colonia {
+    background-image: url('../images/cosmo_science/scienceList/colonia.png');
+}
+
+.science-main{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+
+    font-size: 22px;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.article-image {
+    height: 80vh;
+    width: 100%;
+
+    position: relative;
+    
+    
+    border: 3px solid rgb(92, 92, 92);
+    border-radius: 15px;
+}
+
+.science-main h1, h2 {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .scince-text {
+        padding: 2px;
+        font-size: 12px;
+    }
 }

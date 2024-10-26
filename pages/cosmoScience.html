@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Космическая наука</title>
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/cosmoScience.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navigation">
         <ul class="nav-items">
@@ -48,17 +56,48 @@
         <img class="logo" src="../static/images/logoDepths.jpg">
     </nav>
 
-    <a class="science-main" href="#">
+    <div class="science-slider">
         <ul class="science-list">
-            <li class="science-list-item">
-                <h3 class="science-list-item-title">
+            <li class="science-list-item" id="astronomy">
+                <h3 class="science-list-item-title science-text">
                     Астрономия
                 </h3>
-                <div class="science-list-item-content">
+                <div class="science-list-item-content science-text">
                     Снимки глубокого космоса, открытия экзопланет, изучение галактик.
                 </div>
             </li>
+            <li class="science-list-item" id="black-hole">
+                <h3 class="science-list-item-title science-text">
+                    Физика черных дыр
+                </h3>
+                <div class="science-list-item-content science-text">
+                    Исследования в области гравитации и релятивистской астрофизики.
+                </div>
+            </li>
+            <li class="science-list-item" id="cosmo-technologies">
+                <h3 class="science-list-item-title science-text">
+                    Космические технологии
+                </h3>
+                <div class="science-list-item-content science-text">
+                    Новые телескопы, рентгеновские и инфракрасные наблюдения.
+                </div>
+            </li>
+            <li class="science-list-item" id="colonia">
+                <h3 class="science-list-item-title science-text">
+                    Будущее колонизации космоса
+                </h3>
+                <div class="science-list-item-content science-text">
+                    Исследования лунных и марсианских баз.
+                </div>
+            </li>
         </ul>
-    </a>
+    </div>
+
+    <div class="science-main">
+
+    </div>
+
+    <script src="../static/js/cosmoScience/chooseContent.js"></script>
 </body>
+
 </html>
