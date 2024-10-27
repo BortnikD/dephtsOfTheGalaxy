@@ -98,11 +98,12 @@ body {
 
 .science-main{
     width: 90%;
-    position: absolute;
+    position: relative;
     left: 5%;
 
     font-size: 22px;
     transition: opacity 0.5s;
+    
 }
 
 .hidden {
