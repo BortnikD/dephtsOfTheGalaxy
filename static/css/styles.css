@@ -227,20 +227,16 @@ footer {
 
 .footer-content {
     display: none;
-    margin-left: 50px;
-    margin-top: 1px;
+    margin-left: 3%;
+    margin-top: 1%;
     margin-bottom: 10px;
+    width: 94%;
 }
 
 .footer-list__item.expanded {
-    height: auto;
+
     background-color: rgb(29, 29, 29);
     color: rgb(218, 217, 217);
-}
-
-.footer-list__item.expanded .footer-content {
-    height: auto;
-    display: block;
 }
 
 .network-list {
