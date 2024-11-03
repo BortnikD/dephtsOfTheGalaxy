@@ -14,31 +14,50 @@
 </head>
 
 <body>
-    <nav class="navigation">
-        <ul class="nav-items">
+    <nav class="navigate">
+        <ul class="nav-list">
+            <li class="nav-list__item explore deactivate" id="explorer">
+                <span>Управление</span>
+                <ul class="nav-links hidden">
+                    <a href="./index.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Главная
+                        </li>
+                    </a>
+                    
+                    <a href="./pages/cosmoScience.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космическая наука
+                        </li>
+                    </a>
 
-            <a href="./index.html" class="nav-link">
-                <li class="nav-item active">Главная</li>
-            </a>
+                    <a href="./pages/cosmoAgents.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космические агенства
+                        </li>
+                    </a>
 
-            <a href="./pages/cosmoScience.html" class="nav-link">
-                <li class="nav-item">Космическая наука</li>
-            </a>
+                    <a href="./pages/news.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Новости
+                        </li>
+                    </a>
 
-            <a href="./pages/cosmoAgents.html" class="nav-link">
-                <li class="nav-item">Космические агенства</li>
-            </a>
+                    <a href="./pages/missions.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Миссии
+                        </li>
+                    </a>
+                </ul>
+            </li>
 
-            <a href="./pages/news.html" class="nav-link">
-                <li class="nav-item">Новости</li>
-            </a>
+            <li class="nav-list__item logo"></li>
 
-            <a href="./pages/missions.html" class="nav-link">
-                <li class="nav-item">Миссии</li>
-            </a>
+            <li class="nav-list__item about-links">
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </li>
         </ul>
-        <label class="site-name">Глубины галактики</label>
-        <img class="logo" src="../static/images/logoDepths.jpg">
     </nav>
 
     <div class="interesting-now-block">
@@ -86,7 +105,7 @@
 
     <footer>
         <ul class="footer-list">
-            <li class="footer-list__item">
+            <li class="footer-list__item" id="about">
                 <div class="li-first-line">
                     <p class="footer-list__link">
                         О нас
@@ -106,7 +125,7 @@
                     omnis<br>
                 </div>
             </li>
-            <li class="footer-list__item">
+            <li class="footer-list__item" id="contact">
                 <div class="li-first-line">
                     <p class="footer-list__link">
                         Контактная информация
@@ -147,6 +166,7 @@
         </div>
     </footer>
 
+    <script src="../static/js/openNav.js"></script>
     <script src="./static/js/scrol.js"></script>
     <script src="../static/js/openFooterContent.js"></script>
 </body>

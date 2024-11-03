@@ -6,7 +6,7 @@ $(document).ready(function () {
         // Обработчик клика для первой линии списка
         $item.find('.li-first-line').click(function(event) {
             // Останавливаем любую текущую анимацию и переключаем панель с эффектом слайда
-            $item.find('.footer-content').stop(true, true).slideToggle(600); // Настройте скорость, как нужно
+            $item.find('.footer-content').stop(true, true).slideToggle(300); // Настройте скорость, как нужно
             
             // Переключаем класс expanded у элемента
             $item.toggleClass('expanded');

@@ -18,31 +18,50 @@
 </head>
 
 <body>
-    <nav class="navigation">
-        <ul class="nav-items">
+    <nav class="navigate">
+        <ul class="nav-list">
+            <li class="nav-list__item explore deactivate" id="explorer">
+                <span>Управление</span>
+                <ul class="nav-links hidden">
+                    <a href="../index.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Главная
+                        </li>
+                    </a>
+                    
+                    <a href="./cosmoScience.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космическая наука
+                        </li>
+                    </a>
 
-            <a href="../index.html" class="nav-link">
-                <li class="nav-item">Главная</li>
-            </a>
+                    <a href="./cosmoAgents.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космические агенства
+                        </li>
+                    </a>
 
-            <a href="./cosmoScience.html" class="nav-link">
-                <li class="nav-item active">Космическая наука</li>
-            </a>
+                    <a href="./news.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Новости
+                        </li>
+                    </a>
 
-            <a href="./cosmoAgents.html" class="nav-link">
-                <li class="nav-item">Космические агенства</li>
-            </a>
+                    <a href="./missions.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Миссии
+                        </li>
+                    </a>
+                </ul>
+            </li>
 
-            <a href="./news.html" class="nav-link">
-                <li class="nav-item">Новости</li>
-            </a>
+            <li class="nav-list__item logo"></li>
 
-            <a href="./missions.html" class="nav-link">
-                <li class="nav-item">Миссии</li>
-            </a>
+            <li class="nav-list__item about-links">
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </li>
         </ul>
-        <label class="site-name">Глубины галактики</label>
-        <img class="logo" src="../static/images/logoDepths.jpg">
     </nav>
 
     <div class="science-slider">
@@ -122,7 +141,7 @@
 
     <footer>
         <ul class="footer-list">
-            <li class="footer-list__item">
+            <li class="footer-list__item" id="about">
                 <div class="li-first-line">
                     <p class="footer-list__link">
                         О нас
@@ -140,16 +159,9 @@
                     magnam<br>
                     asperiores ratione, quisquam rem. Commodi quod nisi quia. Expedita nihil quia, sit voluptates
                     omnis<br>
-                    dignissimos saepe? Voluptates, sit modi. Nemo qui quam provident magni explicabo accusantium,
-                    illo<br>
-                    magnam at aliquid perferendis dolores labore commodi hic, aspernatur illum? <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla enim, non explicabo velit sunt
-                    <br>
-                    obcaecati in provident incidunt magnam eveniet aspernatur nisi porro officiis doloremque
-                    eligendi<br>
                 </div>
             </li>
-            <li class="footer-list__item">
+            <li class="footer-list__item" id="contact">
                 <div class="li-first-line">
                     <p class="footer-list__link">
                         Контактная информация
@@ -190,6 +202,7 @@
         </div>
     </footer>
 
+    <script src="../static/js/openNav.js"></script>
     <script src="../static/js/cosmoScience/chooseContent.js"></script>
     <script src="../static/js/openFooterContent.js"></script>
 </body>

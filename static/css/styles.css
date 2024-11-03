@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(26, 26, 26);
     margin: 0px;
     color: rgb(233, 233, 233);
     font-family: "Roboto", sans-serif;
@@ -7,66 +11,134 @@ body {
     font-style: normal;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    margin-left: 0px;
+.navigate {
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
     width: 100%;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(20, 20, 20);
+    color: rgb(207, 207, 207);
+    display: flex;
 }
 
-.nav-items {
+.nav-list {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
+    list-style: none;
+    position: relative;
     display: flex;
-    list-style-type: none;
-}
+    justify-content: center;         
+    align-items: center;  
+}       
 
-.nav-item {
-    margin: 5px;
-    padding: 10px;
+.nav-list__item.explore {
     height: auto;
-    border-radius: 10px;
-    transition: background-color 0.8s ease;
+    width: 300px;
     font-size: 18px;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 7px;
+    border: 1px solid rgb(73, 73, 73);
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    transition: border 0.3s;
+    cursor: pointer;
+    user-select: none;
 }
 
-.nav-item:hover {
-    transition: background-color 0.4s ease;
-    background-color: rgb(66, 66, 66);
+.nav-list__item.explore.deactivate:hover {
+    border: 1px solid rgb(73, 73, 73);
+    transition: border 0.1s;
 }
 
-.nav-item.active {
-    background-color: rgb(49, 49, 49);
+.nav-list__item.explore span {
+    margin-left: 10px;
 }
 
-.nav-link {
-    color: rgb(233, 233, 233);
+.nav-list__item.explore.deactivate {
+    width: 120px;
+    border: 1px solid rgba(73, 73, 73, 0.466);
+}
+
+.nav-links {    
+    list-style: none;
+    position: relative;
+    padding: 20px;
+}
+
+.nav-links__item {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgba(124, 124, 124, 0.377);
+    border-left: none;
+    border-right: none;
+}
+
+.nav-links__item:hover {
+    background-color: rgb(173, 1, 1);
+}
+
+.navi-link{
+    width: 100%;
+    height: 100%;
+    color: rgb(207, 207, 207);
     text-decoration: none;
 }
 
-.site-name {
-    font-size: 25px;
-    white-space: nowrap;
-    margin: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.hidden {
+    opacity: 0;
+    position: fixed;
+    left: 9999px;
 }
 
-.logo {
-    max-width: 80px;
-    max-height: 80px;
+.nav-list__item.logo {
+    background-image: url('../images/logoDepth.png');
+    background-size: 80px 80px; /* Задайте необходимые размеры */
+    background-repeat: no-repeat; /* Запретить повторение изображения */
+    background-position: center; /* Центрирование изображения */
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
+
+    justify-content: center;
+}
+
+.nav-list__item.about-links {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    font-size: 18px;
+}
+
+.nav-list__item.about-links a{
     margin: 10px;
-    margin-right: 20px;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    transition: color 0.1s;
+    border: 1px solid rgba(73, 73, 73, 0);
+    padding: 10px;
+    transition: border 0.1s;
+    border-radius: 7%;
+}
+
+.nav-list__item.about-links a:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(73, 73, 73);
 }
 
 .interesting-now-block {
+    
     margin: 0px;
     display: flex;
     justify-content: space-between;
     /* Размещает элементы на максимальном расстоянии */
     align-items: center;
     /* Центрирует кнопки вертикально */
-    position: relative;
+
 }
 
 .interesting-now-list {
@@ -218,7 +290,7 @@ footer {
     position: absolute;
     right: 10%;
     opacity: 80%;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .footer-list__item.expanded img {
@@ -233,8 +305,7 @@ footer {
     width: 94%;
 }
 
-.footer-list__item.expanded {
-
+.footer-list__item.expanded, .footer-list__item:target {
     background-color: rgb(29, 29, 29);
     color: rgb(218, 217, 217);
 }
@@ -285,3 +356,4 @@ footer {
         max-width: 80%;
     }
 }
+
