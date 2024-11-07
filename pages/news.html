@@ -7,44 +7,104 @@
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
-    <nav class="navigation">
-        <ul class="nav-items">
+    <nav class="navigate">
+        <ul class="nav-list">
+            <li class="nav-list__item links">
+                <a href="../index.html">Главная</a>
+                <a href="./cosmoScience.html">Космическая наука</a>
+                <a href="./cosmoAgents.html">Космические агенства</a>
+                <a href="./news.html" id="active-page">Новости</a>
+                <a href="./missions.html">Миссии</a>
+            </li>
 
-            <a href="../index.html" class="nav-link">
-                <li class="nav-item">Главная</li>
-            </a>
+            <li class="nav-list__item logo"></li>
 
-            <a href="./cosmoScience.html" class="nav-link">
-                <li class="nav-item">Космическая наука</li>
-            </a>
+            <li class="nav-list__item explore deactivate" id="explorer">
+                <span class="panel-name">
+                    <img src="../static/images/menu.png" id="menu-button">
+                </span>                <ul class="nav-links hidden">
+                    <a href="#about" class="navi-link">
+                        <li class="nav-links__item">
+                            О нас
+                        </li>
+                    </a>
+                    
+                    <a href="#contact" class="navi-link">
+                        <li class="nav-links__item">
+                            Контакты
+                        </li>
+                    </a>
 
-            <a href="./cosmoAgents.html" class="nav-link">
-                <li class="nav-item">Космические агенства</li>
-            </a>
-
-            <a href="./news.html" class="nav-link">
-                <li class="nav-item active">Новости</li>
-            </a>
-
-            <a href="./missions.html" class="nav-link">
-                <li class="nav-item">Миссии</li>
-            </a>
-
-            <a href="./astronomy.html" class="nav-link">
-                <li class="nav-item">Астрономия</li>
-            </a>
-
-            <a href="./about.html" class="nav-link">
-                <li class="nav-item">О нас</li>
-            </a>
-
-            <a href="./contact.html" class="nav-link">
-                <li class="nav-item">Контактная информация</li>
-            </a>
+                </ul>
+            </li>
 
         </ul>
-        <label class="site-name">Глубины галактики</label>
-        <img class="logo" src="../static/images/logoDepths.jpg">
     </nav>
+
+    <footer>
+        <ul class="footer-list">
+            <li class="footer-list__item" id="about">
+                <div class="li-first-line">
+                    <p class="footer-list__link">
+                        О нас
+                    </p>
+                    <img src="../static/images/cosmo_science/footer/arrowOpen.png">
+                </div>
+                <div class="footer-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla enim, non explicabo velit sunt
+                    <br>
+                    obcaecati in provident incidunt magnam eveniet aspernatur nisi porro officiis doloremque
+                    eligendi<br>
+                    laboriosam nesciunt architecto laudantium! Aspernatur beatae pariatur quis saepe quasi provident<br>
+                    quod libero voluptatibus. Sunt exercitationem eligendi a veniam non quod optio esse delectus<br>
+                    expedita vel reiciendis architecto nostrum reprehenderit officiis fugit ea consequatur culpa
+                    magnam<br>
+                    asperiores ratione, quisquam rem. Commodi quod nisi quia. Expedita nihil quia, sit voluptates
+                    omnis<br>
+                </div>
+            </li>
+            <li class="footer-list__item" id="contact">
+                <div class="li-first-line">
+                    <p class="footer-list__link">
+                        Контактная информация
+                    </p>
+                    <img src="../static/images/cosmo_science/footer/arrowOpen.png">
+                </div>
+                <div class="footer-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur rerum ipsam velit dolore
+                    repellat amet neque sapiente reiciendis perferendis eos a numquam maxime, quas voluptates atque,
+                    minima dolorum. Temporibus voluptates nulla eius ipsum error facere placeat, possimus cum quaerat
+                    laborum odio labore quae reprehenderit. Magnam incidunt blanditiis odit numquam explicabo sed alias
+                    quod, perspiciatis eum libero porro error corrupti tenetur repellendus natus quas vitae eveniet,
+                    consequuntur voluptatibus praesentium asperiores magni consequatur eligendi debitis! Accusamus
+                    quibusdam enim molestiae maxime delectus adipisci veritatis molestias, alias esse sit unde rem,
+                    doloremque tempora earum reiciendis cumque quam itaque cum ad, consequatur voluptates! Ut!
+                </div>
+            </li>
+        </ul>
+        <div class="last-line-footer">
+            <span class="footer__signature">Глубины галактики</span>
+            <ul class="network-list">
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://instagram.com" title="instagram" alt="instagram">
+                        <img src="../static/images/networks/instagram.png">
+                    </a>
+                </li>
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://t.me/" title="telegram" alt="telegram">
+                        <img src="../static/images/networks/telegram.png">
+                    </a>
+                </li>
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://x.com/" title="X" alt="x">
+                        <img src="../static/images/networks/x.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../static/js/openFooterContent.js"></script>
+    <script src="../static/js/openNav.js"></script>
 </body>
 </html>

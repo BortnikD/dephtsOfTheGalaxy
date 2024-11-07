@@ -5,23 +5,37 @@ html {
 body {
     background-color: rgb(26, 26, 26);
     margin: 0px;
+    padding: 0px;
     color: rgb(233, 233, 233);
     font-family: "Roboto", sans-serif;
     font-weight: 350;
     font-style: normal;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .navigate {
-    position: relative;
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
     padding: 0px;
     margin: 0px;
     height: 100px;
     width: 100%;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20, 0.7);
     color: rgb(207, 207, 207);
     display: flex;
+    backdrop-filter: blur(10px);
 }
+
 
 .nav-list {
     margin: 0px;
@@ -30,9 +44,9 @@ body {
     list-style: none;
     position: relative;
     display: flex;
-    justify-content: center;         
-    align-items: center;  
-}       
+    justify-content: center;
+    align-items: center;
+}
 
 .nav-list__item.explore {
     height: auto;
@@ -43,11 +57,12 @@ body {
     border-radius: 7px;
     border: 1px solid rgb(73, 73, 73);
     position: absolute;
-    left: 20px;
+    right: 50px;
     top: 30px;
     transition: border 0.3s;
     cursor: pointer;
     user-select: none;
+    text-align: center;
 }
 
 .nav-list__item.explore.deactivate:hover {
@@ -55,19 +70,26 @@ body {
     transition: border 0.1s;
 }
 
-.nav-list__item.explore span {
-    margin-left: 10px;
+.panel-name {
+    position: relative;
+}
+
+#menu-button {
+    height: 25px;
+    width: 35px;
 }
 
 .nav-list__item.explore.deactivate {
-    width: 120px;
-    border: 1px solid rgba(73, 73, 73, 0.466);
+    width: 50px;
+    border: 1px solid rgb(20, 20, 20, 0);
+    background-color: rgb(20, 20, 20, 0);
 }
 
-.nav-links {    
+.nav-links {
     list-style: none;
     position: relative;
     padding: 20px;
+    text-align: left;
 }
 
 .nav-links__item {
@@ -82,7 +104,7 @@ body {
     background-color: rgb(173, 1, 1);
 }
 
-.navi-link{
+.navi-link {
     width: 100%;
     height: 100%;
     color: rgb(207, 207, 207);
@@ -97,41 +119,50 @@ body {
 
 .nav-list__item.logo {
     background-image: url('../images/logoDepth.png');
-    background-size: 80px 80px; /* Задайте необходимые размеры */
-    background-repeat: no-repeat; /* Запретить повторение изображения */
-    background-position: center; /* Центрирование изображения */
+    background-size: 80px 80px;
+    /* Задайте необходимые размеры */
+    background-repeat: no-repeat;
+    /* Запретить повторение изображения */
+    background-position: center;
+    /* Центрирование изображения */
     width: 80px;
     height: 80px;
     border-radius: 50px;
+    box-shadow: 5px 2px 5px black;
 
     justify-content: center;
 }
 
-.nav-list__item.about-links {
+.nav-list__item.links {
     display: flex;
     position: absolute;
-    right: 50px;
+    left: 30px;
     font-size: 18px;
+    user-select: none;
 }
 
-.nav-list__item.about-links a{
-    margin: 10px;
+.nav-list__item.links a {
+    margin: 1px;
     color: rgb(207, 207, 207);
     text-decoration: none;
     transition: color 0.1s;
-    border: 1px solid rgba(73, 73, 73, 0);
+    border: 3px solid rgba(73, 73, 73, 0);
     padding: 10px;
     transition: border 0.1s;
-    border-radius: 7%;
+    border-radius: 7px;
 }
 
-.nav-list__item.about-links a:hover{
+.nav-list__item.links a:hover {
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(73, 73, 73);
+    border: 3px solid rgb(109, 109, 109);
+}
+
+#active-page {
+    opacity: 70%;
 }
 
 .interesting-now-block {
-    
+
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -305,7 +336,8 @@ footer {
     width: 94%;
 }
 
-.footer-list__item.expanded, .footer-list__item:target {
+.footer-list__item.expanded,
+.footer-list__item:target {
     background-color: rgb(29, 29, 29);
     color: rgb(218, 217, 217);
 }
@@ -356,4 +388,3 @@ footer {
         max-width: 80%;
     }
 }
-

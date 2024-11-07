@@ -1,0 +1,158 @@
+body {
+    background-image: url('../images/agents/about-agents/planet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-agents {
+    margin: 0px;   
+    padding: 0px; 
+    width: 100%;
+    height: 70vh;
+}
+
+.about-agents__content {
+    margin-top: 20px;
+    margin-left: 15%; 
+    padding: 0px; 
+    width: 30%;
+    max-height: 100%;
+    color: rgb(233, 233, 233);
+}
+
+h1, p, span {
+    margin: 0px;   
+    padding: 0px; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.nasa-block {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-nasa {
+    margin-left: 15%; 
+    width: 70%;
+    display: flex;
+    gap: 100px;
+}
+
+.about-nasa__content {
+    width: 50%;
+}
+
+.about-picture {
+    height: 450px;
+    width: 600px;
+}
+
+
+.articles {
+    margin-left: 15%; 
+    width: 70%;
+    margin-top: 50px;
+}
+
+.articles-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+    gap: 20px;
+}
+
+.articles-list__item {
+    width: 270px;
+    height: 400px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    transition: transform 0.5s, top 0.5s, left 0.5s;    
+}
+
+.articles__link {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+}
+
+#asteroids {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/agents/nasa/articles/asteroid.png');
+}
+
+#telescope {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/agents/nasa/articles/telescope.png');
+}
+
+#moon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/agents/nasa/articles/moonBase.png');
+}
+
+#ai {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/agents/nasa/articles/ai.png');
+}
+
+#mars {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/agents/nasa/articles/mars.png');
+}
+
+#protect {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px;
+    background-image: url('../images/agents/nasa/articles/protect.png');
+}
+
+#turism {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url('../images/agents/nasa/articles/turism.png');
+}
+
+#artemida {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px;
+    background-image: url('../images/agents/nasa/articles/artemida.png');
+}
+
+
+.esa-block {
+    backdrop-filter: blur(10px);
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-esa {
+    margin-left: 15%; 
+    width: 70%;
+    display: flex;
+    gap: 100px;
+}
+

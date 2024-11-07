@@ -1,50 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Космические агенства</title>
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/agents.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
+
 <body>
-    <nav class="navigation">
-        <ul class="nav-items">
+    <nav class="navigate">
+        <ul class="nav-list">
+            <li class="nav-list__item links">
+                <a href="../index.html">Главная</a>
+                <a href="./cosmoScience.html">Космическая наука</a>
+                <a href="./cosmoAgents.html" id="active-page">Космические агенства</a>
+                <a href="./news.html">Новости</a>
+                <a href="./missions.html">Миссии</a>
+            </li>
 
-            <a href="../index.html" class="nav-link">
-                <li class="nav-item">Главная</li>
-            </a>
+            <li class="nav-list__item logo"></li>
 
-            <a href="./cosmoScience.html" class="nav-link">
-                <li class="nav-item">Космическая наука</li>
-            </a>
+            <li class="nav-list__item explore deactivate" id="explorer">
+                <span class="panel-name">
+                    <img src="../static/images/menu.png" id="menu-button">
+                </span>
+                <ul class="nav-links hidden">
+                    <a href="#about" class="navi-link">
+                        <li class="nav-links__item">
+                            О нас
+                        </li>
+                    </a>
 
-            <a href="./cosmoAgents.html" class="nav-link">
-                <li class="nav-item active">Космические агенства</li>
-            </a>
+                    <a href="#contact" class="navi-link">
+                        <li class="nav-links__item">
+                            Контакты
+                        </li>
+                    </a>
 
-            <a href="./news.html" class="nav-link">
-                <li class="nav-item">Новости</li>
-            </a>
-
-            <a href="./missions.html" class="nav-link">
-                <li class="nav-item">Миссии</li>
-            </a>
-
-            <a href="./astronomy.html" class="nav-link">
-                <li class="nav-item">Астрономия</li>
-            </a>
-
-            <a href="./about.html" class="nav-link">
-                <li class="nav-item">О нас</li>
-            </a>
-
-            <a href="./contact.html" class="nav-link">
-                <li class="nav-item">Контактная информация</li>
-            </a>
+                </ul>
+            </li>
 
         </ul>
-        <label class="site-name">Глубины галактики</label>
-        <img class="logo" src="../static/images/logoDepths.jpg">
     </nav>
+
+    <main>
+        <div class="about-agents">
+            <div class="about-agents__content">
+                <h1>О космических агенствах</h1>
+                <p>
+                    Космические агентства – это государственные или частные организации, которые занимаются
+                    исследованием, развитием и использованием космоса в различных целях. Основные задачи таких агентств
+                    включают научные исследования, разработку и запуск космических аппаратов, изучение космического
+                    пространства, планирование пилотируемых миссий и проведение наблюдений за Землей.
+                </p>
+                <p>
+                    Космические агентства играют важную роль в продвижении научно-технического прогресса и вносят вклад
+                    в расширение знаний о нашей Вселенной. Крупнейшие из них, такие как NASA (Национальное управление по
+                    аэронавтике и исследованию космического пространства США), ESA (Европейское космическое агентство),
+                    Роскосмос (Российское космическое агентство), JAXA (Японское агентство аэрокосмических исследований)
+                    и CNSA (Китайское национальное космическое управление), занимаются не только национальными, но и
+                    международными проектами, способствующими глобальному сотрудничеству в космической сфере.
+                </p>
+                <p>
+                    Космические агентства исследуют и разрабатывают технологии для будущих поколений, вдохновляя
+                    человечество на освоение новых горизонтов и открытие тайн, скрытых в глубинах космоса.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="nasa-block">
+            <div class="about-nasa">
+                <div class="about-nasa__content">
+                    <h1>О NASA</h1>
+                    <p>
+                        NASA (Национальное управление по аэронавтике и исследованию космического пространства) — это
+                        государственное агентство США, которое отвечает за исследования космоса, развитие космических
+                        технологий, изучение Солнечной системы и космической науки. Основанное в 1958 году, NASA стало
+                        ответом на успех Советского Союза в запуске первого искусственного спутника Земли, "Спутник-1",
+                        в 1957 году. С тех пор агентство превратилось в одно из самых влиятельных и инновационных
+                        космических агентств мира, продвигая границы науки и технологий.
+                    </p>
+                </div>
+                <img class="about-picture nasa" src="../static/images/agents/nasa/nasa.png">
+            </div>
+
+            <div class="nasa articles">
+                <ul class="articles-list">
+
+                    <a class="articles__link" href="#asteroids-article">
+                        <li class="articles-list__item" id="asteroids">
+                            <h2>
+                                NASA запускает инновационную миссию для исследования астероидов
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#telescope-article">
+                        <li class="articles-list__item" id="telescope">
+                            <h2>
+                                NASA объявляет о новом телескопе для глубокого космоса
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#moon-article">
+                        <li class="articles-list__item" id="moon">
+                            <h2>
+                                Архитекторы NASA готовят базу на Луне к 2030 году
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#ai-article">
+                        <li class="articles-list__item" id="ai">
+                            <h2>
+                                Робототехника и ИИ в новых космических миссиях NASA
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#mars-article">
+                        <li class="articles-list__item" id="mars">
+                            <h2>
+                                Марсоход Perseverance открывает новые факты о прошлом Марса
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#protect-article">
+                        <li class="articles-list__item" id="protect">
+                            <h2>
+                                NASA разрабатывает систему защиты Земли от астероидов
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#turism-article">
+                        <li class="articles-list__item" id="turism">
+                            <h2>
+                                NASA и коммерческие компании ускоряют разработку космических туров
+                            </h2>
+                        </li>
+                    </a>
+
+                    <a class="articles__link" href="#artemida-article">
+                        <li class="articles-list__item" id="artemida">
+                            <h2>
+                                Артемида: NASA возвращает человека на Луну
+                            </h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="esa-block">
+            <div class="about-esa">
+                <img class="about-picture esa" src="../static/images/agents/esa/esa.png">
+                <div class="about-esa__content">
+                    <h1>О ESA</h1>
+                    <p>
+                        Европейское космическое агентство (ESA) — это международная организация, объединяющая страны
+                        Европы для проведения космических исследований и освоения космоса. Основанное в 1975 году, ESA
+                        активно участвует в разработке передовых космических технологий, исследовании Солнечной системы,
+                        наблюдении за Землёй и изучении дальнего космоса. Штаб-квартира агентства находится в Париже,
+                        Франция, и в него входят 22 страны-участницы.
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <ul class="footer-list">
+            <li class="footer-list__item" id="about">
+                <div class="li-first-line">
+                    <p class="footer-list__link">
+                        О нас
+                    </p>
+                    <img src="../static/images/cosmo_science/footer/arrowOpen.png">
+                </div>
+                <div class="footer-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla enim, non explicabo velit sunt
+                    <br>
+                    obcaecati in provident incidunt magnam eveniet aspernatur nisi porro officiis doloremque
+                    eligendi<br>
+                    laboriosam nesciunt architecto laudantium! Aspernatur beatae pariatur quis saepe quasi provident<br>
+                    quod libero voluptatibus. Sunt exercitationem eligendi a veniam non quod optio esse delectus<br>
+                    expedita vel reiciendis architecto nostrum reprehenderit officiis fugit ea consequatur culpa
+                    magnam<br>
+                    asperiores ratione, quisquam rem. Commodi quod nisi quia. Expedita nihil quia, sit voluptates
+                    omnis<br>
+                </div>
+            </li>
+            <li class="footer-list__item" id="contact">
+                <div class="li-first-line">
+                    <p class="footer-list__link">
+                        Контактная информация
+                    </p>
+                    <img src="../static/images/cosmo_science/footer/arrowOpen.png">
+                </div>
+                <div class="footer-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur rerum ipsam velit dolore
+                    repellat amet neque sapiente reiciendis perferendis eos a numquam maxime, quas voluptates atque,
+                    minima dolorum. Temporibus voluptates nulla eius ipsum error facere placeat, possimus cum quaerat
+                    laborum odio labore quae reprehenderit. Magnam incidunt blanditiis odit numquam explicabo sed alias
+                    quod, perspiciatis eum libero porro error corrupti tenetur repellendus natus quas vitae eveniet,
+                    consequuntur voluptatibus praesentium asperiores magni consequatur eligendi debitis! Accusamus
+                    quibusdam enim molestiae maxime delectus adipisci veritatis molestias, alias esse sit unde rem,
+                    doloremque tempora earum reiciendis cumque quam itaque cum ad, consequatur voluptates! Ut!
+                </div>
+            </li>
+        </ul>
+        <div class="last-line-footer">
+            <span class="footer__signature">Глубины галактики</span>
+            <ul class="network-list">
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://instagram.com" title="instagram" alt="instagram">
+                        <img src="../static/images/networks/instagram.png">
+                    </a>
+                </li>
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://t.me/" title="telegram" alt="telegram">
+                        <img src="../static/images/networks/telegram.png">
+                    </a>
+                </li>
+                <li class="network-list__item">
+                    <a class="network-list__link" href="https://x.com/" title="X" alt="x">
+                        <img src="../static/images/networks/x.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../static/js/openFooterContent.js"></script>
+    <script src="../static/js/openNav.js"></script>
 </body>
+
 </html>
