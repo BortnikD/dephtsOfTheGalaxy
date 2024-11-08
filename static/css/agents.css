@@ -75,14 +75,37 @@ p {
 .articles-list__item {
     width: 270px;
     height: 400px;
-    padding: 10px;
-    background-color: rgba(240, 248, 255, 0.185);
+
     transition: transform 0.5s, top 0.5s, left 0.5s;    
+}
+
+.articles__link h2 {
+    padding: 15px;
+    margin: 0px;
+    width: 240px;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.103);
+    text-shadow: 2px 2px 2px black;
+    font-weight: 400;
+    font-size: 21px;
 }
 
 .articles__link {
     text-decoration: none;
     color: rgb(233, 233, 233);
+    transition: all 0.5s;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+        
+.articles__link:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+    border: 2px solid rgb(253, 253, 253);
+}
+
+.articles__link:active {
+    transition: all 0.2s;
+    transform: scale(1.03);
 }
 
 #asteroids {
@@ -143,8 +166,8 @@ p {
 
 
 .esa-block {
+    
     backdrop-filter: blur(10px);
-
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -156,3 +179,61 @@ p {
     gap: 100px;
 }
 
+
+
+#ariane {
+    background-image: url('../images/agents/esa/articles/Ariane.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hera {
+    background-image: url('../images/agents/esa/articles/hera.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#mars-esa {
+    background-image: url('../images/agents/esa/articles/mars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px;
+}
+
+#apophis {
+    background-image: url('../images/agents/esa/articles/Apophis.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#tech {
+    background-image: url('../images/agents/esa/articles/tech.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -120px;
+}
+
+#journal {
+    background-image: url('../images/agents/esa/articles/journal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -120px;    
+}
+
+#signal {
+    background-image: url('../images/agents/esa/articles/signal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px;
+}
+
+#hubble {
+    background-image: url('../images/agents/esa/articles/hubble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -200px;
+}
