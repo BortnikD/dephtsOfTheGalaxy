@@ -94,15 +94,22 @@ img {
 }
 
 .nav-links__item {
-    margin: 10px;
+    margin: 0px 10px;
     padding: 5px;
     border: 1px solid rgba(124, 124, 124, 0.377);
     border-left: none;
     border-right: none;
+    border-top: none;
+    transition: 0.6s;
+}
+
+.nav-links__item:first-child {
+    border-top: 1px solid rgba(124, 124, 124, 0.377);
 }
 
 .nav-links__item:hover {
-    background-color: rgb(173, 1, 1);
+    background-color: #5D032F;
+    transition: 0.2s;
 }
 
 .navi-link {
@@ -110,6 +117,11 @@ img {
     height: 100%;
     color: rgb(207, 207, 207);
     text-decoration: none;
+}
+
+.navi-link:hover {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
 }
 
 .hidden {
@@ -260,6 +272,7 @@ footer {
     align-items: center;
     font-size: 20px;
     transition: min-height 0.8s, height 0.8s;
+    padding-top: 50px;
 }
 
 .last-line-footer {
@@ -388,4 +401,27 @@ footer {
     .interesting-now-background-content {
         max-width: 80%;
     }
+
+    .nav-list__item.links {
+        display: none;
+    }
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+#carousel-1 {
+    background-image: url('../images/cosmo_science/gammaBurst.png');
+}
+
+#carousel-2 {
+    background-image: url('../images/cosmo_science/asteroid.png');
+}
+
+#carousel-3 {
+    background-image: url('../images/cosmo_science/theBlackHole.png');
 }
