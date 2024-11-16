@@ -117,12 +117,10 @@ main {
     width: 60%;
     position: relative;
     left: 20%;
-    gap: 10px;
     padding-bottom: 20px;
-
+    padding-top: 40px;
     font-size: 22px;
     transition: opacity 0.5s;
-
 }
 
 .hidden {
@@ -145,6 +143,6 @@ main {
     }
 }
 
-p {
-    margin: 0px;
+p, h1, h3 {
+    margin: 10px;
 }
