@@ -5,14 +5,18 @@ body {
     background-image: url('../images/zemlia.jpg');
 }
 
-.blur-bg {
+.blur-dark-bg {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 #carouselControls {
     position: relative;
-    padding: 20px 0px;
+    padding: 20px 0px; 
+}
+
+.carousel-inner {
+    border-radius: 30px;
 }
 
 .carousel-item {
@@ -20,7 +24,6 @@ body {
     background-size: cover;
     background-position: center;
     height: 600px;
-    border-radius: 30px;
 }
 
 #carousel-1 {
