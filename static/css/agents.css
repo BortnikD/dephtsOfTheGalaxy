@@ -22,14 +22,14 @@ body {
     color: rgb(233, 233, 233);
 }
 
-h1, p, span {
+main h1, main p, main span {
     margin: 0px;   
     padding: 0px; 
     margin-bottom: 20px;
     text-shadow: 0px 0px 1px black;
 }
 
-p {
+main p {
     font-size: 18px;
     font-weight: 300;
 }
