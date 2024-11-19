@@ -10,9 +10,14 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.blur-bg {
+    backdrop-filter: blur(10px);
+    height: 600px;
+}
+
 #carouselControls {
     position: relative;
-    padding: 20px 0px; 
+    padding: 50px 0px; 
 }
 
 .carousel-inner {
@@ -76,3 +81,111 @@ body {
 .slide-source a {
     color: rgb(233, 233, 233);
 }
+
+.about-site {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.about-site__item {
+    position: relative;
+    height: 400px;
+    width: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    padding: 0px;
+    transition: 0.5s;
+    
+}
+
+.about-site__item:hover {
+    transform: scale(1.05);
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.about-site__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: rgb(233, 233, 233);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about-site__link:hover {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+}
+
+.about-site__content {
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 10px black;
+}
+
+.about-site__content p {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+#asteroids {
+    background-image: url('../images/agents/nasa/articles/asteroid.png');
+}
+
+#telescope {
+    background-image: url('../images/agents/nasa/articles/telescope.png');
+}
+
+#moon {
+    background-image: url('../images/agents/nasa/articles/moonBase.png');
+}
+
+#ai {
+
+    background-image: url('../images/agents/nasa/articles/ai.png');
+}
+
+#ariane {
+    background-image: url('../images/agents/esa/articles/Ariane.png');
+}
+
+#hera {
+    background-image: url('../images/agents/esa/articles/hera.png');
+}
+
+#mars-esa {
+    background-image: url('../images/agents/esa/articles/mars.png');
+}
+
+#astronomy {
+    background-image: url('../images/cosmo_science/scienceList/Astronomy.png');
+}
+
+#cosmo-technologies {
+    background-image: url('../images/cosmo_science/scienceList/technologies.png');
+}
+
+.bg-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+
+
