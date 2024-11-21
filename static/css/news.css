@@ -46,6 +46,7 @@ main {
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.308);
 }
 
 .news-list__item:hover {
@@ -110,3 +111,35 @@ main {
     padding-bottom: 30px;
 }
 
+.article-content p {
+    font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 5px;
+    }
+    
+    .news-list__item {
+        border: 2px solid rgb(255, 255, 255);
+        max-height: 423px;
+        background-color: rgba(0, 0, 0, 0.308);
+    }
+
+    .news-list__title {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .news-list__title img {
+        width: 100%;
+    }
+
+    .article-content {
+        margin: 10px;
+    }
+
+    .news-list__item-content {
+        margin: 0 10px;
+    }
+}

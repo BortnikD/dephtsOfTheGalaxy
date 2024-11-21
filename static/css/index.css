@@ -202,7 +202,6 @@ body {
 
 .explore-block__text {
     flex: 60%;
-
 }
 
 .explore-block__img{
@@ -213,4 +212,10 @@ body {
     border-radius: 30px;
     margin: 10px;
    
+}
+
+@media (max-width: 1200px) {
+    .explore-block {
+        display: block;
+    }
 }
