@@ -113,6 +113,11 @@ body {
     transition: 0.2s;
 }
 
+.about-site__item:active {
+    transform: scale(1.05);
+}
+
+
 .about-site__link {
     position: absolute;
     border-radius: 30px;

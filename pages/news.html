@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
+
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/news.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
+
 <body>
     <nav class="navigate">
         <ul class="nav-list">
@@ -22,24 +34,141 @@
             <li class="nav-list__item explore deactivate" id="explorer">
                 <span class="panel-name">
                     <img src="../static/images/menu.png" id="menu-button">
-                </span>                <ul class="nav-links hidden">
+                </span>
+                <ul class="nav-links hidden">
+                    <a href="../index.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Главная
+                        </li>
+                    </a>
+                    <a href="./cosmoScience.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космическая наука
+                        </li>
+                    </a>
+                    <a href="./cosmoAgents.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Космические агенства
+                        </li>
+                    </a>
+                    <a href="./news.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Новости
+                        </li>
+                    </a>
+                    <a href="./missions.html" class="navi-link">
+                        <li class="nav-links__item">
+                            Миссии
+                        </li>
+                    </a>
+
                     <a href="#about" class="navi-link">
                         <li class="nav-links__item">
                             О нас
                         </li>
                     </a>
-                    
+
                     <a href="#contact" class="navi-link">
                         <li class="nav-links__item">
                             Контакты
                         </li>
                     </a>
-
                 </ul>
             </li>
-
         </ul>
     </nav>
+
+    <main>
+        <div class="container">
+            <div class="about-page">
+                <h1>Новый Веб Контент</h1>
+                <p>
+                    Будьте в курсе последних новостей, пока мы исследуем вселенную и узнаем больше о нашей родной
+                    планете.
+                </p>
+            </div>
+
+            <div class="news-block">
+                <ul class="news-list">
+                    <li class="news-list__item">
+                        <img src="../static/images/pinSpace.png">
+                        <div class="news-list__item-content">
+                            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dignissimos. </h2>
+                            <span class="time-to-read">
+                                3 MIN READ
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias voluptatibus magnam voluptate sapiente assumenda, neque nihil quod obcaecati ut.
+                            </p>
+                            <span>
+                                ARTICLE
+                            </span>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <img src="../static/images/pinSpace.png">
+                        <div class="news-list__item-content">
+                            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dignissimos. </h2>
+                            <span class="time-to-read">
+                                3 MIN READ
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias voluptatibus magnam voluptate sapiente assumenda, neque nihil quod obcaecati ut.
+                            </p>
+                            <span>
+                                ARTICLE
+                            </span>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <img src="../static/images/pinSpace.png">
+                        <div class="news-list__item-content">
+                            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dignissimos. </h2>
+                            <span class="time-to-read">
+                                3 MIN READ
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias voluptatibus magnam voluptate sapiente assumenda, neque nihil quod obcaecati ut.
+                            </p>
+                            <span>
+                                ARTICLE
+                            </span>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <img src="../static/images/pinSpace.png">
+                        <div class="news-list__item-content">
+                            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dignissimos. </h2>
+                            <span class="time-to-read">
+                                3 MIN READ
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias voluptatibus magnam voluptate sapiente assumenda, neque nihil quod obcaecati ut.
+                            </p>
+                            <span>
+                                ARTICLE
+                            </span>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <img src="../static/images/pinSpace.png">
+                        <div class="news-list__item-content">
+                            <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dignissimos. </h2>
+                            <span class="time-to-read">
+                                3 MIN READ
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias voluptatibus magnam voluptate sapiente assumenda, neque nihil quod obcaecati ut.
+                            </p>
+                            <span>
+                                ARTICLE
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <ul class="footer-list">
@@ -51,16 +180,37 @@
                     <img src="../static/images/cosmo_science/footer/arrowOpen.png">
                 </div>
                 <div class="footer-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla enim, non explicabo velit sunt
-                    <br>
-                    obcaecati in provident incidunt magnam eveniet aspernatur nisi porro officiis doloremque
-                    eligendi<br>
-                    laboriosam nesciunt architecto laudantium! Aspernatur beatae pariatur quis saepe quasi provident<br>
-                    quod libero voluptatibus. Sunt exercitationem eligendi a veniam non quod optio esse delectus<br>
-                    expedita vel reiciendis architecto nostrum reprehenderit officiis fugit ea consequatur culpa
-                    magnam<br>
-                    asperiores ratione, quisquam rem. Commodi quod nisi quia. Expedita nihil quia, sit voluptates
-                    omnis<br>
+                    <h5>
+                        Добро пожаловать на сайт "Depths of the Galaxy" — вашу главную платформу для увлекательных
+                        новостей
+                        и событий, связанных с космосом!
+                    </h5>
+
+                    <p>
+                        Мы созданы для тех, кто мечтает о звёздах, интересуется исследованиями далёких галактик и хочет
+                        быть
+                        в курсе последних достижений в области космических технологий. Наша цель — сделать сложные
+                        научные
+                        темы доступными, интересными и вдохновляющими для широкой аудитории.
+                    </p>
+
+                    <h5>
+                        На нашем сайте вы найдёте:
+                    </h5>
+
+                    <p>
+                        Актуальные новости из мира космоса.
+                        Информацию о миссиях и проектах космических агентств.
+                        Последние открытия в области астрономии и космической науки.
+                        Исследования, посвящённые будущему освоению Луны, Марса и других планет.
+                        Мы стремимся объединить всех, кто увлечён космосом, и стать для вас надёжным источником знаний и
+                        вдохновения.
+                    </p>
+
+                    <h5>
+                        Присоединяйтесь к нам, чтобы вместе исследовать глубины Галактики!
+                    </h5>
+
                 </div>
             </li>
             <li class="footer-list__item" id="contact">
@@ -71,14 +221,31 @@
                     <img src="../static/images/cosmo_science/footer/arrowOpen.png">
                 </div>
                 <div class="footer-content">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur rerum ipsam velit dolore
-                    repellat amet neque sapiente reiciendis perferendis eos a numquam maxime, quas voluptates atque,
-                    minima dolorum. Temporibus voluptates nulla eius ipsum error facere placeat, possimus cum quaerat
-                    laborum odio labore quae reprehenderit. Magnam incidunt blanditiis odit numquam explicabo sed alias
-                    quod, perspiciatis eum libero porro error corrupti tenetur repellendus natus quas vitae eveniet,
-                    consequuntur voluptatibus praesentium asperiores magni consequatur eligendi debitis! Accusamus
-                    quibusdam enim molestiae maxime delectus adipisci veritatis molestias, alias esse sit unde rem,
-                    doloremque tempora earum reiciendis cumque quam itaque cum ad, consequatur voluptates! Ut!
+                    <h5>
+                        Мы всегда рады вашему обратному сообщению! Если у вас есть вопросы, предложения или идеи,
+                        свяжитесь
+                        с нами:
+                    </h5>
+
+                    <p>
+                        Email: <a href="mailto:info@depthsofthegalaxy.com">info@depthsofthegalaxy.com</a>
+                    </p>
+
+                    <p>
+                        Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    </p>
+
+                    <p>
+                        Адрес: г. Москва, ул. Космическая, д. 42, оф. 108
+                    </p>
+
+                    <p>
+                        Часы работы: <br>
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: выходной
+                    </p>
+
+                    <p>Мы ценим ваши отзывы и будем рады помочь с любыми вопросами!</p>
                 </div>
             </li>
         </ul>
@@ -107,4 +274,5 @@
     <script src="../static/js/openFooterContent.js"></script>
     <script src="../static/js/openNav.js"></script>
 </body>
+
 </html>
