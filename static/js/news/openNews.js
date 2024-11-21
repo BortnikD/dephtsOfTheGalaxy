@@ -1,5 +1,4 @@
 const newsItems = document.querySelectorAll('.news-list__item');
-var oneIsActive = false;
 
 newsItems.forEach(item => {
     item.addEventListener('click', (event) => {
@@ -15,3 +14,4 @@ document.addEventListener('click', (event) => {
         }
     });
 });
+
