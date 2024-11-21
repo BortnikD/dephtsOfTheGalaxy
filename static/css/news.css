@@ -2,7 +2,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-image: url('../images/news/bg.png');
+    text-shadow: 0 0 5px black;
 }
 
 main {
@@ -20,6 +22,7 @@ main {
 .about-page {
     width: 100%;
     padding-top: 30px;
+    font-size: 20px;
 }
 
 .news-block {
@@ -35,22 +38,56 @@ main {
 
 .news-list__item {
     margin: 20px 0;
-    display: flex;
-    height: 180px;
+    display: block;
+    max-height: 180px;
     gap: 30px;
+    transition: 0.8s ease;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.news-list__item:hover {
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(126, 195, 228);
+}
+
+.news-list__item.active {
+    transition: 0.8s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(126, 195, 228);
+    max-height: 2000px;
+}
+
+.news-list__item:active {
+    transition: box-shadow 0.1s;
+    box-shadow: 0 0 50px rgb(85, 209, 240);
 }
 
 .news-list__item:last-child {
     margin-bottom: 0;
-
 }
 
 .news-list__item-content h2 {
-    margin: 0 0 5px 0;
+    margin: 15px 0 5px 0;
+}
+
+.news-list__title {
+    display: flex;
+    gap: 30px;
+}
+
+.news-list__title img {
+    height: 180px;
+    width: 280px;
 }
 
 .news-list__item-content p {
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     font-size: 20px
 }
 
@@ -67,3 +104,9 @@ main {
     font-weight: 150;
     font-size: 18px;
 }
+
+.article-content {
+    margin: 0 200px;
+    padding-bottom: 30px;
+}
+
