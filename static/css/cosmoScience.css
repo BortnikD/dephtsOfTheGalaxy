@@ -14,20 +14,25 @@ main {
     background-color: rgba(0, 0, 0, 0.63);
 }
 
+.container {
+    margin: 0 300px;
+}
+
 .science-slider {
     text-decoration: none;
     position: relative;
-    margin-left: 5%;
-    width: 90%;
+
     padding-top: 20px;
 }
 
 .science-list {
     margin: 0px;
+    padding-left: 0;
     list-style: none;
     display: flex;
 
     flex-wrap: wrap;   
+    gap: 35px;
 
     justify-content: center;
     align-items: center;
@@ -37,10 +42,10 @@ main {
     background-color: rgb(51, 54, 56);
     width: 20%;
     min-width: 250px;
-    height: 25vh;
+    height: 200px;
 
-    padding: 10px;
-    margin: 15px;
+    padding: 15px;
+
 
     color: rgb(240, 240, 240);
 
@@ -111,9 +116,7 @@ main {
 }
 
 .science-main{
-    width: 60%;
     position: relative;
-    left: 20%;
     padding-bottom: 20px;
     padding-top: 40px;
     font-size: 22px;
@@ -137,6 +140,10 @@ main {
     .scince-text {
         padding: 2px;
         font-size: 12px;
+    }
+
+    .container {
+        margin: 0 5px;
     }
 }
 
