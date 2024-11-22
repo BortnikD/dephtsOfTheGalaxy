@@ -77,6 +77,10 @@ main p {
     height: 400px;
 
     transition: transform 0.5s, top 0.5s, left 0.5s;    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .articles__link h2 {
@@ -109,58 +113,34 @@ main p {
 }
 
 #asteroids {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url('../images/agents/nasa/articles/asteroid.png');
 }
 
 #telescope {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url('../images/agents/nasa/articles/telescope.png');
 }
 
 #moon {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url('../images/agents/nasa/articles/moonBase.png');
 }
 
 #ai {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url('../images/agents/nasa/articles/ai.png');
 }
 
 #mars {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url('../images/agents/nasa/articles/mars.png');
 }
 
 #protect {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -300px;
     background-image: url('../images/agents/nasa/articles/protect.png');
 }
 
 #turism {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
     background-image: url('../images/agents/nasa/articles/turism.png');
 }
 
 #artemida {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -300px;
     background-image: url('../images/agents/nasa/articles/artemida.png');
 }
 
@@ -182,70 +162,40 @@ main p {
 
 #ariane {
     background-image: url('../images/agents/esa/articles/Ariane.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #hera {
     background-image: url('../images/agents/esa/articles/hera.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 #mars-esa {
     background-image: url('../images/agents/esa/articles/mars.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: -300px;
 }
 
 #apophis {
     background-image: url('../images/agents/esa/articles/Apophis.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #tech {
     background-image: url('../images/agents/esa/articles/tech.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: -120px;
 }
 
 #journal {
     background-image: url('../images/agents/esa/articles/journal.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: -120px;    
 }
 
 #signal {
     background-image: url('../images/agents/esa/articles/signal.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: -300px;
 }
 
 #hubble {
     background-image: url('../images/agents/esa/articles/hubble.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: -200px;
 }
-
-/* .article-big {
-    width: 80vw;
-    min-height: 100vh;
-    background-color: rgb(0, 0, 0, 0.7);
-    backdrop-filter: blur(30px);
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
 @media (max-width: 1200px) {
     .about-agents__content {
