@@ -249,7 +249,29 @@ main p {
 
 @media (max-width: 1200px) {
     .about-agents__content {
-        width: 100%;
-        margin: 5%;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .about-nasa {
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .about-nasa__content {
+        width: 90%;
+        margin: 5px;
+    }
+
+    .about-esa {
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .about-esa__content {
+        width: 90%;
+        margin: 5px;
     }
 }
