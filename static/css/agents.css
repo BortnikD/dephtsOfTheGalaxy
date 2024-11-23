@@ -197,6 +197,56 @@ main p {
     background-position: -200px;
 }
 
+.article-full {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: calc(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+.article-full__content {
+    margin: 0 300px;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(27, 27, 27) 10%, rgb(31, 31, 31) 50%, rgb(24, 24, 24) 100%);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px white;
+
+}
+
+.article-full.visible {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.blur-bg {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.article-full__text {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.article-wraper {
+    margin: 60px;
+}
+
 @media (max-width: 1200px) {
     .about-agents__content {
         margin: 0 5%;
@@ -222,6 +272,14 @@ main p {
 
     .about-esa__content {
         width: 90%;
+        margin: 5px;
+    }
+
+    .article-full__content {
+        margin: 0 50px;
+    }
+
+    .article-wraper {
         margin: 5px;
     }
 }
