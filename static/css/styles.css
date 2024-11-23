@@ -2,6 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {   
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #131313;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #71d4f0, #6ea2f7);
+}
+
+
 body {
     background-color: rgb(26, 26, 26);
     margin: 0px;
