@@ -1,6 +1,6 @@
 body {
     color: rgb(233, 233, 233);
-    background-image: url('../images/cosmo_science/mainBg.png');
+    background-image: url('../images/cosmo_science/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ main {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .container {
