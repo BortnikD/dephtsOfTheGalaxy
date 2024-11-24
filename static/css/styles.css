@@ -200,7 +200,7 @@ footer {
     display: block;
     /* align-items: center; */
     font-size: 20px;
-    
+
     padding-top: 50px;
     overflow: hidden;
 }
@@ -233,7 +233,7 @@ footer {
 
     width: 85%;
     max-height: 100px;
-    
+
     transition: max-height 0.7s linear, background-color 0.8s ease;
 
     display: block;
@@ -317,7 +317,7 @@ footer {
 
 .network-list__item {
     margin: 5px;
-    width: 60px;    
+    width: 60px;
 }
 
 .network-list__link img {

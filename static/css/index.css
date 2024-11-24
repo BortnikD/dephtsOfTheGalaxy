@@ -18,7 +18,7 @@ body {
 
 #carouselControls {
     position: relative;
-    padding: 50px 0px; 
+    padding: 50px 0px;
 }
 
 .carousel-inner {
@@ -197,7 +197,8 @@ body {
     flex-wrap: wrap;
 }
 
-.explore-block__text h1, .explore-block__text p{
+.explore-block__text h1,
+.explore-block__text p {
     margin: 10px;
     text-shadow: 0 0 5px black;
 }
@@ -206,14 +207,14 @@ body {
     flex: 60%;
 }
 
-.explore-block__img{
+.explore-block__img {
     flex: 40%;
 }
 
-.explore-block__img img{
+.explore-block__img img {
     border-radius: 30px;
     margin: 10px;
-   
+
 }
 
 @media (max-width: 1200px) {

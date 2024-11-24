@@ -3,7 +3,9 @@ const newsItems = document.querySelectorAll('.news-list__item');
 newsItems.forEach(item => {
     item.addEventListener('click', (event) => {
         event.stopPropagation();
-        item.classList.toggle('active');
+        if(!event.target.closest('.article-content')){
+            item.classList.toggle('active');
+        }
     });
 });
 
