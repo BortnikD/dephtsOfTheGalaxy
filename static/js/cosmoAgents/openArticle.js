@@ -1,3 +1,31 @@
+let articles = [];
+
+async function loadContentArticles() {
+    try {
+        const response = await fetch('../media/json/agents/articles.json');
+        const json = await response.json();
+        articles = json['articles'];
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const articleContent = document.querySelector('.article-wraper');
+
+function putArticleContent(article_id) {
+    const article = articles.find(article => article.id === article_id);
+    if (article) {
+        const content = `
+            <h1>${article.title}</h1>
+            <img src="${article.image}" alt="${article.title}">
+            <div>${article.content}</div>
+        `;
+        articleContent.innerHTML = content;
+    } else {
+        console.error(`Article with id ${article_id} not found`);
+    }
+}
+
 function openArticle() {
     document.body.classList.add('no-scroll'); // Добавляем класс no-scroll к body
     document.querySelector('.article-full').classList.add('visible');
@@ -8,15 +36,19 @@ function closeArticle() {
     document.querySelector('.article-full').classList.remove('visible');
 }
 
-document.querySelectorAll('.articles__link').forEach(link => {
-    link.addEventListener('click', function(event) {
+document.querySelectorAll('.articles-list__item').forEach(link => {
+    link.addEventListener('click', function (event) {
         event.preventDefault(); // Предотвращаем переход по ссылке
+        putArticleContent(link.id);
         openArticle();
     });
 });
 
-document.querySelector('.article-full').addEventListener('click', function(event) {
+document.querySelector('.article-full').addEventListener('click', function (event) {
     if (event.target.classList.contains('article-full')) {
         closeArticle();
     }
 });
+
+// Загружаем статьи при загрузке страницы
+loadContentArticles();
