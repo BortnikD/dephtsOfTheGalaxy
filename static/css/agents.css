@@ -247,6 +247,10 @@ body.no-scroll {
     margin: 60px;
 }
 
+.article-wraper img{
+    width: 100%;
+}
+
 @media (max-width: 1200px) {
     .about-agents__content {
         margin: 0 5%;
