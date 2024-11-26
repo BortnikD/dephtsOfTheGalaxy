@@ -10,15 +10,19 @@ async function loadContentArticles() {
     }
 }
 
-const articleContent = document.querySelector('.article-wraper');
+const articleContent = document.querySelector('.article-full__content');
 
 function putArticleContent(article_id) {
     const article = articles.find(article => article.id === article_id);
     if (article) {
         const content = `
-            <h1>${article.title}</h1>
-            <img src="${article.image}" alt="${article.title}">
-            <div>${article.content}</div>
+        <div class="article-full__text">
+            <div class="article-wraper">
+                <h1>${article.title}</h1>
+                <img src="${article.image}" alt="${article.title}">
+                <div>${article.content}</div> 
+            </div>
+        </div>
         `;
         articleContent.innerHTML = content;
     } else {
